@@ -17,3 +17,7 @@ fi
 zplug load
 # zplug end
 
+# alias begin
+alias ls="exa"
+alias l="ls -al"
+# alias end
