@@ -16,6 +16,7 @@ brew "emacs"
 brew "bat"
 brew "htop"
 brew "ripgrep"
+brew "shellcheck"
 
 
 # Cask
