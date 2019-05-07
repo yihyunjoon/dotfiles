@@ -15,6 +15,8 @@ zplugin light "sindresorhus/pure"
 zplugin ice "rupa/z" pick"z.sh"
 zplugin light "rupa/z"
 zplugin light "lukechilds/zsh-nvm"
+zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' pick"direnv" src"zhook.zsh"
+zplugin light direnv/direnv
 ### zplugin end
 
 ### alias begin
