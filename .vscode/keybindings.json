@@ -136,5 +136,21 @@
 	{
 		"key": "cmd+8",
 		"command": "-workbench.action.focusEighthEditorGroup"
+	},
+	{
+		"key": "cmd+t",
+		"command": "workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "cmd+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "cmd+n",
+		"command": "workbench.action.newWindow"
+	},
+	{
+		"key": "shift+cmd+n",
+		"command": "-workbench.action.newWindow"
 	}
 ]
