@@ -20,6 +20,10 @@ zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%a
 zplugin light direnv/direnv
 ### zplugin end
 
+autoload -Uz compinit
+compinit
+zplugin cdreplay -q
+
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
