@@ -2,6 +2,9 @@ echo "Loading dotfiles .zshrc"
 
 export NVM_LAZY_LOAD=true
 
+# Load aliases
+source "$HOME/dotfiles/alias.sh"
+
 ### Added by Zplugin's installer
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
@@ -47,9 +50,3 @@ zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate # enable approximate matches for completion
 
 zplugin light zsh-users/zsh-completions
-
-### alias begin
-alias ls="exa"
-alias l="ls -al"
-alias nv="nvim"
-### alias end
