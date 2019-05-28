@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Make sure you use single quotes
 Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
 
 " Initialize plugin system
 call plug#end()
