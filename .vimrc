@@ -23,4 +23,10 @@ let g:oceanic_next_terminal_italic = 1
 let g:airline_theme='oceanicnext'
 colorscheme OceanicNext
 
+" Show line numbers
 set number
+
+" Show invisibles
+set list
+set listchars=tab:→\ ,space:·
+highlight NonText guifg=#2d3b43
