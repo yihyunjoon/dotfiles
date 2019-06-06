@@ -7,6 +7,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
