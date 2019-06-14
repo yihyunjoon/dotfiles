@@ -1,11 +1,14 @@
-echo "Loading dotfiles .zshrc"
-
 export NVM_LAZY_LOAD=true
 
 # Load aliases
 source "$HOME/dotfiles/alias.sh"
 
-### Added by Zplugin's installer
+# Install zplugin
+if [ ! -e "$HOME/.zplugin/bin/zplugin.zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+fi
+
+# Load zplugin
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
