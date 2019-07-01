@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
 source color.sh
 
-echo -e "${BOLD}Welcome to Setup.sh${RESET}"
+echo "${BOLD}Welcome to Setup.sh${RESET}"
 
 if command -v brew > /dev/null; then
     echo "brew is installed"
@@ -17,4 +18,4 @@ else
     brew install zsh
 fi
 
-echo -e "${ITALIC}bye.${RESET}"
+echo "${ITALIC}bye.${RESET}"
