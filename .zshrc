@@ -3,6 +3,11 @@ export NVM_LAZY_LOAD=true
 # Load aliases
 source "$HOME/dotfiles/alias.sh"
 
+if [[ $(uname) = "Linux" ]]; then
+    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+    export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+fi
+
 # Install zplugin
 if [ ! -e "$HOME/.zplugin/bin/zplugin.zsh" ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
