@@ -58,3 +58,5 @@ zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate # enable approximate matches for completion
 
 zplugin light zsh-users/zsh-completions
+
+eval `keychain --eval --agents ssh --inherit any id_ed25519`
