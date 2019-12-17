@@ -9,6 +9,7 @@ alias v="bat"
 
 alias nv="nvim"
 alias em="emacs"
+alias th="trash"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
