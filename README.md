@@ -1,7 +1,6 @@
 # Hyunjoon's dotfiles
 
 ## Installation
----
 ```sh
 git clone https://github.com/tobark/dotfiles.git
 ```
@@ -16,6 +15,6 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ```
 
-*Thanks to*
+## *Thanks to*...
 - [yous](https://github.com/yous/dotfiles)
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
