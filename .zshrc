@@ -26,8 +26,6 @@ zinit ice pick"async.zsh" src"pure.zsh"
 zinit light "sindresorhus/pure"
 zinit load "agkozak/zsh-z"
 zinit light "lukechilds/zsh-nvm"
-zinit ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' pick"direnv" src"zhook.zsh"
-zinit light direnv/direnv
 ### zinit end
 
 autoload -Uz compinit
