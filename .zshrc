@@ -8,31 +8,31 @@ if [[ $(uname) = "Linux" ]]; then
     export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 fi
 
-# Install zplugin
-if [ ! -e "$HOME/.zplugin/bin/zplugin.zsh" ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+# Install zinit
+if [ ! -e "$HOME/.zinit/bin/zinit.zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 fi
 
-# Load zplugin
-source "$HOME/.zplugin/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
-### End of Zplugin's installer chunk
+# Load zinit
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+### End of zinit's installer chunk
 
-### zplugin begin
-zplugin light "zdharma/fast-syntax-highlighting"
-zplugin load "zdharma/history-search-multi-word"
-zplugin ice pick"async.zsh" src"pure.zsh"
-zplugin light "sindresorhus/pure"
-zplugin load "agkozak/zsh-z"
-zplugin light "lukechilds/zsh-nvm"
-zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' pick"direnv" src"zhook.zsh"
-zplugin light direnv/direnv
-### zplugin end
+### zinit begin
+zinit light "zdharma/fast-syntax-highlighting"
+zinit load "zdharma/history-search-multi-word"
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light "sindresorhus/pure"
+zinit load "agkozak/zsh-z"
+zinit light "lukechilds/zsh-nvm"
+zinit ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' pick"direnv" src"zhook.zsh"
+zinit light direnv/direnv
+### zinit end
 
 autoload -Uz compinit
 compinit
-zplugin cdreplay -q
+zinit cdreplay -q
 
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
@@ -56,6 +56,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate # enable approximate matches for completion
 
-zplugin light zsh-users/zsh-completions
+zinit light zsh-users/zsh-completions
 
 eval `keychain --eval --agents ssh --inherit any id_ed25519`

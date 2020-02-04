@@ -1,7 +1,6 @@
 alias ...='../..'
 alias ....='../../..'
 
-alias zp='zplugin'
 alias ls='exa'
 alias l='ls -al'
 
