@@ -1,0 +1,5 @@
+brew "bat"
+brew "exa"
+brew "fd"
+brew "fzf"
+brew "jq"
