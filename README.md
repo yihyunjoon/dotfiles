@@ -5,6 +5,17 @@
 git clone https://github.com/tobark/dotfiles.git
 ```
 
+### Brewfile
+On macOS
+```sh
+brew bundle
+```
+
+On Linux
+```sh
+brew bundle --file=Linux
+```
+
 ### Zsh
 ```sh
 ln -s ~/dotfiles/.zshrc ~/.zshrc
