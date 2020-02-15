@@ -36,6 +36,10 @@ set list
 set listchars=tab:→\ ,space:·
 highlight NonText guifg=#2d3b43
 
+" Hightlight over 80 characters
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 set splitright
 
 nnoremap <C-J> <C-W><C-J>
