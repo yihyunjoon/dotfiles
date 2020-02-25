@@ -31,6 +31,9 @@ colorscheme OceanicNext
 " Show line numbers
 set number
 
+" Save command history
+set history=1000
+
 " Show invisibles
 set list
 set listchars=tab:→\ ,space:·
