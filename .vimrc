@@ -4,17 +4,27 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Make sure you use single quotes
+
+" Appearance
 Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'
-Plug 'editorconfig/editorconfig-vim'
+
+" Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
+
+" Code format
 Plug 'prettier/vim-prettier'
+Plug 'editorconfig/editorconfig-vim'
+
+" Language supports
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+
+" etc.
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
 
 " Initialize plugin system
 call plug#end()
