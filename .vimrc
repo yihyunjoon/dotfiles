@@ -41,6 +41,9 @@ let g:oceanic_next_terminal_italic = 1
 let g:airline_theme='oceanicnext'
 colorscheme OceanicNext
 
+set updatetime=100
+set signcolumn=yes
+
 " Show line numbers
 set number
 
