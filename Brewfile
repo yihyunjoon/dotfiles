@@ -4,54 +4,33 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-# Bourne-Again SHell, a UNIX command interpreter
+
 brew "bash"
-# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Command-line JavaScript / TypeScript engine
 brew "deno"
-# GNU Emacs text editor
 brew "emacs"
-# Modern replacement for 'ls'
 brew "exa"
-# Simple, fast and user-friendly alternative to find
 brew "fd"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# Distributed revision control system
 brew "git"
-# GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Improved top (interactive process viewer)
 brew "htop"
-# Add GitHub support to git on the command-line
 brew "hub"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# User-friendly front-end to ssh-agent(1)
 brew "keychain"
-# Manipulate OpenType and multiple-master fonts
 brew "lcdf-typetools"
-# Mac App Store command-line interface
 brew "mas"
-# Remote terminal application
 brew "mosh"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
-# Command-line tool to generate, analyze, convert and manipulate colors
 brew "pastel"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Text interface for Git repositories
 brew "tig"
-# Terminal multiplexer
 brew "tmux"
-# UNIX shell (command interpreter)
 brew "zsh"
+
+# Brew cask
 cask "1password"
 cask "alfred"
 cask "coconutbattery"
@@ -75,6 +54,8 @@ cask "spotify"
 cask "telegram-desktop"
 cask "virtualbox"
 cask "visual-studio-code"
+
+# Mac App Store
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Dato", id: 1470584107
