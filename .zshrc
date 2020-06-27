@@ -56,4 +56,10 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate # en
 
 zinit light zsh-users/zsh-completions
 
-eval `keychain --eval --agents ssh --inherit any id_ed25519`
+# Funtoo keychain
+case "$OSTYPE" in
+    darwin*)    eval `keychain --eval --agents ssh --inherit any id_25519` ;;
+    linux-gnu*) eval `keychain --eval --agents ssh id_ed25519` ;;
+    *)          echo "Unknown" ;;
+esac
+
