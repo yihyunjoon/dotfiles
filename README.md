@@ -13,7 +13,7 @@ brew bundle
 
 On Linux
 ```sh
-brew bundle --file=Linux
+brew bundle --file=LinuxBrewfile
 ```
 
 ### Zsh
