@@ -18,9 +18,7 @@ Plug 'prettier/vim-prettier'
 Plug 'editorconfig/editorconfig-vim'
 
 " Language supports
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " etc.
 Plug 'jiangmiao/auto-pairs'

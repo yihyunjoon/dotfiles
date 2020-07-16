@@ -1,4 +1,5 @@
 export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD=('nvim')
 
 # Load aliases
 source "$HOME/dotfiles/alias.sh"
