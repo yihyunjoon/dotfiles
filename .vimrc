@@ -19,6 +19,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Language supports
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'cespare/vim-toml'
 
 " etc.
 Plug 'jiangmiao/auto-pairs'
