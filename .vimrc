@@ -60,6 +60,10 @@ match OverLength /\%81v.\+/
 
 set splitright
 
+" Enable mouse
+set mouse=a
+
+" Key mapping
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
