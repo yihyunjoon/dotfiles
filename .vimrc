@@ -18,8 +18,11 @@ Plug 'prettier/vim-prettier'
 Plug 'editorconfig/editorconfig-vim'
 
 " Language supports
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'cespare/vim-toml'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-rust-analyzer',
+  \ ]
 
 " etc.
 Plug 'jiangmiao/auto-pairs'
@@ -28,7 +31,6 @@ Plug 'mattn/emmet-vim'
 " Initialize plugin system
 call plug#end()
 
-" Or if you have Neovim >= 0.1.5
 if (has("termguicolors"))
  set termguicolors
 endif
@@ -62,6 +64,9 @@ set splitright
 
 " Enable mouse
 set mouse=a
+
+" Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Key mapping
 nnoremap <C-J> <C-W><C-J>
