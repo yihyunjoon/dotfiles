@@ -3,3 +3,5 @@
 [user]
 	name = Yi Hyunjoon
 	email = yi.hyunjoon@gmail.com
+[init]
+	defaultBranch = main
