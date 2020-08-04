@@ -3,5 +3,8 @@
 [user]
 	name = Yi Hyunjoon
 	email = yi.hyunjoon@gmail.com
+	signingkey = 58CA73D79943A541
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
