@@ -5,6 +5,7 @@ alias ls='exa'
 alias l='ls -al'
 
 alias g='git'
+alias gs='git switch'
 alias v='bat'
 
 alias nv='nvim'
