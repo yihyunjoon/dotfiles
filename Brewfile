@@ -28,6 +28,7 @@ brew "ripgrep"
 brew "shellcheck"
 brew "tig"
 brew "tmux"
+brew "trash-cli"
 brew "zsh"
 
 # Brew cask
@@ -52,7 +53,6 @@ cask "sketch"
 cask "slack"
 cask "spotify"
 cask "telegram-desktop"
-cask "virtualbox"
 cask "visual-studio-code"
 
 # Mac App Store
@@ -67,5 +67,4 @@ mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
 mas "Twitter", id: 1482454543
-mas "Wunderlist", id: 410628904
 mas "Xcode", id: 497799835
