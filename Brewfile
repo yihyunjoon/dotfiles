@@ -35,6 +35,7 @@ brew "zsh"
 # Brew cask
 cask "1password"
 cask "alfred"
+cask "bartender"
 cask "coconutbattery"
 cask "discord"
 cask "firefox"
