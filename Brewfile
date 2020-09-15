@@ -36,14 +36,14 @@ brew "zsh"
 cask "1password"
 cask "alfred"
 cask "bartender"
+cask "blender"
 cask "coconutbattery"
 cask "discord"
+cask "figma"
 cask "firefox"
-cask "font-noto-sans"
-cask "font-noto-sans-cjk"
-cask "font-noto-serif"
-cask "font-noto-serif-cjk"
 cask "google-chrome"
+cask "grammarly"
+cask "gitify"
 cask "iina"
 cask "iterm2"
 cask "keybase"
@@ -51,11 +51,17 @@ cask "lyricsx"
 cask "notion"
 cask "qbittorrent"
 cask "sequel-pro"
-cask "sketch"
 cask "slack"
 cask "spotify"
 cask "telegram-desktop"
+cask "unity-hub"
 cask "visual-studio-code"
+
+# Brew cask fonts
+cask "font-noto-sans"
+cask "font-noto-sans-cjk"
+cask "font-noto-serif"
+cask "font-noto-serif-cjk"
 
 # Mac App Store
 mas "Affinity Designer", id: 824171161
@@ -68,5 +74,4 @@ mas "Magnet", id: 441258766
 mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
-mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
