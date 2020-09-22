@@ -4,9 +4,12 @@ alias ....='../../..'
 alias ls='exa'
 alias l='ls -al'
 
+# Git and GitHub
 alias g='git'
 alias gs='git switch'
 alias gp='git push'
+alias gc='gh repo clone'
+
 alias v='bat'
 
 alias nv='nvim'
