@@ -5,7 +5,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "bash"
 brew "bat"
 brew "deno"
 brew "emacs"
@@ -29,8 +28,6 @@ brew "ripgrep"
 brew "shellcheck"
 brew "tig"
 brew "tmux"
-brew "trash-cli"
-brew "zsh"
 
 # Brew cask
 cask "1password"
