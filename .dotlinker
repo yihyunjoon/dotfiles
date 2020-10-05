@@ -1,0 +1,31 @@
+[zshrc]
+source = ".zshrc"
+target = "~/.zshrc"
+
+[gitconfig]
+source = ".gitconfig"
+target = "~/.gitconfig"
+
+[gitignore]
+source = ".gitignore"
+target = "~/.gitignore"
+
+[editorconfig]
+source = ".editorconfig"
+target = "~/.editorconfig"
+
+[tmux]
+source = ".tmux.conf"
+target = "~/.tmux.conf"
+
+[vimrc]
+source = ".vimrc"
+target = "~/.config/nvim/init.vim"
+
+[gpg-agent]
+source = "gpg-agent.conf"
+target = "~/.gnupg/gpg-agent.conf"
+
+[p10k]
+source = ".p10k.zsh"
+target = "~/.p10k.zsh"
