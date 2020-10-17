@@ -50,6 +50,7 @@ cask "lyricsx"
 cask "mos"
 cask "notion"
 cask "qbittorrent"
+cask "rectangle"
 cask "sequel-pro"
 cask "slack"
 cask "simplenote"
@@ -67,7 +68,6 @@ cask "font-noto-serif-cjk"
 mas "Dato", id: 1470584107
 mas "DoOneThing", id: 464910442
 mas "Dropzone 3", id: 695406827
-mas "Magnet", id: 441258766
 mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
