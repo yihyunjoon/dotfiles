@@ -7,6 +7,7 @@ tap "homebrew/services"
 
 brew "bat"
 brew "deno"
+brew "dog"
 brew "emacs"
 brew "exa"
 brew "fd"
