@@ -8,3 +8,6 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+
+[pull]
+	ff = only
