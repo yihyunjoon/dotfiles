@@ -17,19 +17,28 @@ if [[ $(uname) = "Linux" ]]; then
 fi
 
 # Install zinit
-if [ ! -e "$HOME/.zinit/bin/zinit.zsh" ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+if [ ! -e "$HOME/.local/share/zinit/zinit.git/zinit.zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/master/doc/install.sh)"
 fi
 
 # Load zinit
-source "$HOME/.zinit/bin/zinit.zsh"
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
-### End of zinit's installer chunk
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+### End of Zinit's installer chunk
 
 ### zinit begin
-zinit light "zdharma/fast-syntax-highlighting"
-zinit load "zdharma/history-search-multi-word"
+zinit light "zdharma-continuum/fast-syntax-highlighting"
+zinit load "zdharma-continuum/history-search-multi-word"
 zinit ice depth=1; zinit light "romkatv/powerlevel10k"
 zinit load "agkozak/zsh-z"
 zinit light "lukechilds/zsh-nvm"
