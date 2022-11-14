@@ -41,16 +41,12 @@ cask "figma"
 cask "firefox"
 cask "google-chrome"
 cask "grammarly"
-cask "gitify"
 cask "iina"
 cask "istat-menus"
 cask "iterm2"
 cask "kap"
 cask "keybase"
-cask "lyricsx"
-cask "mos"
 cask "notion"
-cask "qbittorrent"
 cask "rectangle"
 cask "sequel-pro"
 cask "slack"
@@ -58,6 +54,7 @@ cask "simplenote"
 cask "spotify"
 cask "telegram-desktop"
 cask "visual-studio-code"
+cask "linearmouse"
 
 # Brew cask fonts
 cask "font-noto-sans"
@@ -67,17 +64,7 @@ cask "font-noto-serif-cjk"
 
 # Mac App Store
 mas "Dato", id: 1470584107
-mas "DoOneThing", id: 464910442
-mas "Dropzone 3", id: 695406827
 mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
 mas "Leaf" id: 576338668
-
-# These may take a lot of time to download.
-# cask "blender"
-# cask "unity-hub"
-# mas "Affinity Designer", id: 824171161
-# mas "Affinity Photo", id: 824183456
-# mas "Keynote", id: 409183694
-# mas "Xcode", id: 497799835
