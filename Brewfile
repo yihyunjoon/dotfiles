@@ -31,30 +31,36 @@ brew "tig"
 brew "tmux"
 
 # Brew cask
+
 cask "1password"
 cask "alfred"
-cask "bartender"
-cask "coconutbattery"
-cask "discord"
-cask "disk-inventory-x"
-cask "figma"
-cask "firefox"
-cask "google-chrome"
-cask "grammarly"
-cask "iina"
-cask "istat-menus"
-cask "iterm2"
-cask "kap"
-cask "keybase"
 cask "notion"
-cask "rectangle"
-cask "sequel-pro"
-cask "slack"
+cask "visual-studio-code"
+cask "figma"
+cask "iterm2"
 cask "simplenote"
 cask "spotify"
+cask "keybase"
+cask "iina"
+cask "kap"
+## Web browsers
+cask "google-chrome"
+cask "arc"
+cask "firefox"
+## Messengers
 cask "telegram-desktop"
-cask "visual-studio-code"
+cask "discord"
+cask "slack"
+## Utility
+cask "kawa"
+cask "gureumkim"
 cask "linearmouse"
+cask "disk-inventory-x"
+cask "coconutbattery"
+cask "aldente"
+cask "bartender"
+cask "istat-menus"
+cask "rectangle"
 
 # Brew cask fonts
 cask "font-noto-sans"
@@ -67,4 +73,4 @@ mas "Dato", id: 1470584107
 mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
-mas "Leaf" id: 576338668
+mas "Leaf", id: 576338668
