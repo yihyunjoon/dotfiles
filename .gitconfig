@@ -3,7 +3,7 @@
 [user]
 	name = Yi Hyunjoon
 	email = yi.hyunjoon@gmail.com
-	signingkey = 58CA73D79943A541
+	signingkey = B4A910A8F0AD3C11614116D0958084F3952EB09E
 [init]
 	defaultBranch = main
 [commit]
