@@ -40,7 +40,6 @@ cask "figma"
 cask "iterm2"
 cask "simplenote"
 cask "spotify"
-cask "keybase"
 cask "iina"
 cask "kap"
 ## Web browsers
@@ -61,6 +60,7 @@ cask "aldente"
 cask "bartender"
 cask "istat-menus"
 cask "rectangle"
+cask "monitorcontrol"
 
 # Brew cask fonts
 cask "font-noto-sans"
