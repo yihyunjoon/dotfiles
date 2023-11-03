@@ -13,6 +13,8 @@ alias gc='gh repo clone'
 alias v='bat'
 
 alias a='cargo'
+alias b='bun'
+
 alias c='code'
 alias nv='nvim'
 alias em='emacs'
