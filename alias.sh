@@ -1,7 +1,7 @@
 alias ...='../..'
 alias ....='../../..'
 
-alias ls='exa'
+alias ls='eza'
 alias l='ls -al'
 
 # Git and GitHub
@@ -14,6 +14,7 @@ alias v='bat'
 
 alias a='cargo'
 alias b='bun'
+alias bx='bunx'
 
 alias c='code'
 alias nv='nvim'
