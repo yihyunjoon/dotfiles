@@ -6,9 +6,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 
 brew "bat"
-brew "deno"
 brew "dog"
-brew "emacs"
 brew "eza"
 brew "fd"
 brew "fzf"
@@ -31,17 +29,20 @@ brew "tig"
 brew "tmux"
 
 # Brew cask
-
 cask "1password"
-cask "alfred"
+cask "raycast"
 cask "notion"
-cask "visual-studio-code"
-cask "figma"
-cask "iterm2"
-cask "simplenote"
 cask "spotify"
 cask "iina"
 cask "kap"
+## Development
+cask "zed"
+cask "visual-studio-code"
+cask "warp"
+cask "iterm2"
+## Design
+cask "figma"
+cask "framer"
 ## Web browsers
 cask "google-chrome"
 cask "arc"
@@ -51,6 +52,7 @@ cask "telegram-desktop"
 cask "discord"
 cask "slack"
 ## Utility
+cask "karabiner-elements"
 cask "kawa"
 cask "gureumkim"
 cask "linearmouse"
@@ -58,7 +60,6 @@ cask "disk-inventory-x"
 cask "coconutbattery"
 cask "aldente"
 cask "bartender"
-cask "istat-menus"
 cask "rectangle"
 cask "monitorcontrol"
 
@@ -74,3 +75,4 @@ mas "Shazam", id: 897118787
 mas "Skitch", id: 425955336
 mas "Things", id: 904280696
 mas "Leaf", id: 576338668
+mas "Drafts", id: 1435957248

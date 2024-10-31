@@ -5,9 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export NVM_LAZY_LOAD=true
-export NVM_LAZY_LOAD=('nvim')
-
 # Load aliases
 source "$HOME/dotfiles/alias.sh"
 
@@ -41,7 +38,6 @@ zinit light "zdharma-continuum/fast-syntax-highlighting"
 zinit load "zdharma-continuum/history-search-multi-word"
 zinit ice depth=1; zinit light "romkatv/powerlevel10k"
 zinit load "agkozak/zsh-z"
-zinit light "lukechilds/zsh-nvm"
 ### zinit end
 
 autoload -Uz compinit
@@ -92,9 +88,10 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-# bun completions
-[ -s "/Users/tobark/.bun/_bun" ] && source "/Users/tobark/.bun/_bun"
+# # bun
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# # bun completions
+# [ -s "/Users/hyunjoon/.bun/_bun" ] && source "/Users/hyunjoon/.bun/_bun"
+eval "$(/Users/hyunjoon/.local/bin/mise activate zsh)"
