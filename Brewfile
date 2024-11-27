@@ -68,6 +68,7 @@ cask "font-noto-sans"
 cask "font-noto-sans-cjk"
 cask "font-noto-serif"
 cask "font-noto-serif-cjk"
+cask "font-sf-mono"
 
 # Mac App Store
 mas "Dato", id: 1470584107
