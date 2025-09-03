@@ -24,8 +24,9 @@ autoload -Uz _zinit
 zinit light "zdharma-continuum/fast-syntax-highlighting"
 zinit light "romkatv/powerlevel10k"
 zinit load "agkozak/zsh-z"
+zinit load zdharma-continuum/history-search-multi-word
 
-eval "$(/Users/hyunjoon/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

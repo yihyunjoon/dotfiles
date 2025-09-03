@@ -15,7 +15,7 @@ alias v='bat'
 alias a='cargo'
 alias b='bun'
 
-alias c='code'
+alias c='code-insiders'
 alias nv='nvim'
 alias th='trash'
 
@@ -24,5 +24,3 @@ alias sudo='sudo '
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload='exec $(SHELL) -l'
-
-
