@@ -5,36 +5,40 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Prevent ~/.zsh_sessions creation (Disable macOS Terminal sessions)
+SHELL_SESSIONS_DISABLE=1
+
 # History configuration
 export HISTFILE="$ZDOTDIR/.zsh_history"
-export HISTSIZE=10000
-export SAVEHIST=10000
+export HISTSIZE=100000
+export SAVEHIST=100000
+setopt EXTENDED_HISTORY      # 타임스탬프 저장
+setopt HIST_FIND_NO_DUPS     # 검색 시 중복 표시 안함 (히스토리는 모두 기록)
+setopt HIST_REDUCE_BLANKS    # 불필요한 공백 제거
+
+# Shell options
+setopt COMPLETE_IN_WORD      # 단어 중간에서도 자동완성
+setopt ALWAYS_TO_END         # 자동완성 후 커서를 끝으로
 
 source "$ZDOTDIR/alias.sh"
 
-### Added by Zinit's installer
-if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
-    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
-    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
-        print -P "%F{33} %F{34}Installation successful.%f%b" || \
-        print -P "%F{160} The clone has failed.%f%b"
-fi
+# zsh-z data file location
+export _Z_DATA="$XDG_DATA_HOME/z/data"
 
-# Load zinit
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+# Load antidote plugin manager
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+antidote load ${ZDOTDIR}/.zsh_plugins.txt
 
-zinit light "zdharma-continuum/fast-syntax-highlighting"
-zinit light "romkatv/powerlevel10k"
-zinit load "agkozak/zsh-z"
-zinit load zdharma-continuum/history-search-multi-word
+# Completion system (after antidote)
+autoload -Uz compinit
+compinit
+
+# Completion styles
+zstyle ':completion:*' menu select                    # 메뉴 선택 가능
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'  # 대소문자 구분 없이
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"  # 색상 적용
 
 eval "$(mise activate zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
-
-# Added by Antigravity
-export PATH="/Users/yihyunjoon/.antigravity/antigravity/bin:$PATH"

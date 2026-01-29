@@ -1,0 +1,11 @@
+# Prompt theme (load first)
+romkatv/powerlevel10k
+
+# Directory jumping
+agkozak/zsh-z
+
+# History search
+zdharma-continuum/history-search-multi-word
+
+# Syntax highlighting (load last)
+zdharma-continuum/fast-syntax-highlighting
