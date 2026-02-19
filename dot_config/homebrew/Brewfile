@@ -1,3 +1,4 @@
+tap "nikitabobko/tap"
 brew "chezmoi"
 brew "eza"
 brew "fzf"
@@ -12,6 +13,7 @@ brew "tailscale"
 brew "trash-cli", link: true
 brew "watchman"
 brew "zellij"
+cask "nikitabobko/tap/aerospace"
 cask "appcleaner"
 cask "betterdisplay"
 cask "bitwarden"
