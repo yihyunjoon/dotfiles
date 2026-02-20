@@ -1,0 +1,12 @@
+# mise configuration file
+# See: https://mise.jdx.dev/configuration.html
+
+[tools]
+bun = "latest"
+node = "lts"
+pnpm = "latest"
+rust = "latest"
+tuist = "latest"
+
+[settings.npm]
+package_manager = "pnpm"
