@@ -18,23 +18,27 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-##### Adding Mission Control Space Indicators #####
-SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
-for i in "${!SPACE_ICONS[@]}"
-do
-  sid="$(($i+1))"
-  space=(
-    space="$sid"
-    icon="${SPACE_ICONS[i]}"
+##### Adding AeroSpace Workspace Indicators #####
+sketchybar --add event aerospace_workspace_change
+
+for workspace in q w e r t; do
+  workspace_icon="$(printf '%s' "$workspace" | tr '[:lower:]' '[:upper:]')"
+  workspace_item=(
+    icon="$workspace_icon"
+    icon.color=0x99ffffff
     icon.padding_left=7
     icon.padding_right=7
-    background.color=0x40ffffff
+    background.drawing=on
+    background.color=0x20ffffff
     background.corner_radius=5
     background.height=25
     label.drawing=off
-    script="$PLUGIN_DIR/space.sh"
+    click_script="aerospace workspace $workspace"
+    script="$PLUGIN_DIR/aerospace.sh $workspace"
   )
-  sketchybar --add space space."$sid" left --set space."$sid" "${space[@]}"
+  sketchybar --add item "space.$workspace" left
+  sketchybar --set "space.$workspace" "${workspace_item[@]}"
+  sketchybar --subscribe "space.$workspace" aerospace_workspace_change
 done
 
 ##### Adding Right Items #####

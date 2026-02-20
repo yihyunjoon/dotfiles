@@ -7,7 +7,14 @@ config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = [
+    'exec-and-forget sketchybar',
+]
+exec-on-workspace-change = [
+    '/bin/bash',
+    '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -66,13 +73,13 @@ preset = 'qwerty'
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 0
-inner.vertical = 0
-outer.left = 0
+inner.horizontal = 4
+inner.vertical = 4
+outer.left = 10
 # Reserve bottom gap for SketchyBar
 outer.bottom = 40
-outer.top = 0
-outer.right = 0
+outer.top = 10
+outer.right = 10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -128,17 +135,18 @@ alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-q = 'workspace 1'
-alt-w = 'workspace 2'
-alt-e = 'workspace 3'
-alt-r = 'workspace 4'
-alt-t = 'workspace 5'
+alt-q = 'workspace q'
+alt-w = 'workspace w'
+alt-e = 'workspace e'
+alt-r = 'workspace r'
+alt-t = 'workspace t'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-ctrl-q = 'move-node-to-workspace 1'
-alt-ctrl-w = 'move-node-to-workspace 2'
-alt-ctrl-e = 'move-node-to-workspace 3'
-alt-ctrl-r = 'move-node-to-workspace 4'
+alt-ctrl-q = 'move-node-to-workspace q'
+alt-ctrl-w = 'move-node-to-workspace w'
+alt-ctrl-e = 'move-node-to-workspace e'
+alt-ctrl-r = 'move-node-to-workspace r'
+alt-ctrl-t = 'move-node-to-workspace t'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
