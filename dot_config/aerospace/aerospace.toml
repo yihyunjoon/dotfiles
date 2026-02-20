@@ -178,10 +178,45 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
+check-further-callbacks = true
+if.workspace = 'q'
+run = 'layout floating'
+
+[[on-window-detected]]
+check-further-callbacks = true
+if.workspace = 'w'
+run = 'layout floating'
+
+[[on-window-detected]]
+check-further-callbacks = true
+if.workspace = 'e'
+run = 'layout floating'
+
+[[on-window-detected]]
+check-further-callbacks = true
+if.workspace = 'r'
+run = 'layout floating'
+
+[[on-window-detected]]
+check-further-callbacks = true
+if.workspace = 't'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'layout tiling'
+
+[[on-window-detected]]
+if.app-id = 'com.openai.codex'
+run = 'layout tiling'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'layout tiling'
+
+[[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = [
-    'layout floating',
-]
+run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
