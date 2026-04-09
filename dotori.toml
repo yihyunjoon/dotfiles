@@ -1,0 +1,9 @@
+config_version = 1
+
+[[links]]
+source = "zsh/.zshrc"
+target = "~/.zshrc"
+
+[[links]]
+source = "zsh/.zsh_plugins.txt"
+target = "~/.zsh_plugins.txt"

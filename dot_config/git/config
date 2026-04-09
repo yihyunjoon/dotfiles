@@ -1,7 +1,0 @@
-[user]
-	name = Yi Hyunjoon
-	email = yi.hyunjoon@gmail.com
-[push]
-	autoSetupRemote = true
-[init]
-	defaultBranch = main
