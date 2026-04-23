@@ -9,3 +9,4 @@ zdharma-continuum/history-search-multi-word
 
 # Syntax highlighting (load last)
 zdharma-continuum/fast-syntax-highlighting
+atuinsh/atuin

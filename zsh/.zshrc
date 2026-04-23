@@ -7,11 +7,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Prevent ~/.zsh_sessions creation (Disable macOS Terminal sessions)
-SHELL_SESSIONS_DISABLE=1
-
 # History configuration
-export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
 setopt EXTENDED_HISTORY      # Save timestamps
@@ -22,6 +18,9 @@ setopt HIST_REDUCE_BLANKS    # Remove unnecessary whitespace
 setopt COMPLETE_IN_WORD      # Allow completion in the middle of a word
 setopt ALWAYS_TO_END         # Move cursor to the end after completion
 
+# Let terminal applications use Ctrl-s and Ctrl-q as key bindings.
+[[ -t 0 ]] && stty -ixon
+
 # Aliases
 source ~/dotfiles/zsh/aliases.zsh
 
@@ -31,6 +30,10 @@ export _Z_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/z/data"
 # Load antidote plugin manager
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
+
+# Keep Atuin on Ctrl-R only. Restore the Up arrow to normal zsh history.
+bindkey '^[[A' up-line-or-history
+bindkey '^[OA' up-line-or-history
 
 # Completion system (after antidote)
 autoload -Uz compinit

@@ -7,3 +7,7 @@ target = "~/.zshrc"
 [[links]]
 source = "zsh/.zsh_plugins.txt"
 target = "~/.zsh_plugins.txt"
+
+[[links]]
+source = "tmux/tmux.conf"
+target = "~/.config/tmux/tmux.conf"
