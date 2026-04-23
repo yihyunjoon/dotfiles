@@ -24,9 +24,6 @@ setopt ALWAYS_TO_END         # Move cursor to the end after completion
 # Aliases
 source ~/dotfiles/zsh/aliases.zsh
 
-# zsh-z data file location
-export _Z_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/z/data"
-
 # Load antidote plugin manager
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
@@ -64,3 +61,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Directory jumping
+eval "$(zoxide init zsh)"
