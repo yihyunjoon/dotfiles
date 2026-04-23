@@ -11,3 +11,7 @@ target = "~/.zsh_plugins.txt"
 [[links]]
 source = "tmux/tmux.conf"
 target = "~/.config/tmux/tmux.conf"
+
+[[links]]
+source = "nvim"
+target = "~/.config/nvim"
